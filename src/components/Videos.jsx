@@ -6,7 +6,7 @@ import VideoCard from "./VideoCard";
 const Videos = ({ videos, direction }) => {
   return (
     <Stack
-      direction={direction || "row"}
+      direction={{ xs: "row", md: "column", sm: "row", lg: "row" }}
       flexWrap="wrap"
       justifyContent="center"
       gap={2}>

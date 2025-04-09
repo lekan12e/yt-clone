@@ -81,10 +81,7 @@ const VideoDetails = () => {
           justifyContent="center"
           alignItems="center">
           {shouldRenderVideos ? (
-            <Videos
-              videos={videos}
-              style={{ direction: { xs: "column", md: "row", sm: "row" } }}
-            />
+            <Videos videos={videos} />
           ) : (
             <Box
               px={1}
