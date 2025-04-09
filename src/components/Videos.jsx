@@ -6,7 +6,7 @@ import VideoCard from "./VideoCard";
 const Videos = ({ videos, direction }) => {
   return (
     <Stack
-      direction={{ xs: "row", md: "column", sm: "row", lg: "row" }}
+      direction={direction || "row"}
       flexWrap="wrap"
       justifyContent="center"
       gap={2}>
@@ -16,7 +16,7 @@ const Videos = ({ videos, direction }) => {
             key={index}
             borderRadius="10px"
             bgcolor="lightgray"
-            sx={{ cursor: "pointer" }}>
+            sx={{ cursor: "pointer", boxSizing: "border-box" }}>
             {item.id.videoId && <VideoCard video={item} />}
             {item.id.channelId && <ChannelCard channelDetail={item} />}
           </Box>
