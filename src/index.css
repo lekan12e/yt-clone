@@ -26,11 +26,11 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color: #fc1503 !important;
   color: white !important;
 }
 
-.category-btn:hover span{
+.category-btn:hover span {
   color: white !important;
 }
 
@@ -39,19 +39,19 @@ a {
   width: 100% !important;
 }
 
-.search-bar{
-  border:none;
-  outline:none;
-  width:350px;
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
 }
 
-.category-btn{
+.category-btn {
   font-weight: bold !important;
   text-transform: capitalize;
   display: flex;
   align-items: center;
   justify-content: start;
-  cursor:pointer;
+  cursor: pointer;
   background: transparent;
   outline: none;
   border: none;
@@ -63,14 +63,14 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-  .category-btn{
+  .category-btn {
     margin: 10px;
   }
 }
 
-@media screen and (max-width:800px){
-  .copyright{
-    display:none !important;
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
   }
 }
 
@@ -81,8 +81,47 @@ a {
 
   .react-player {
     height: 45vh !important;
+    width: 100% !important;
   }
-  .search-bar{
-    width:200px;
+  .search-bar {
+    width: 200px;
+  }
+}
+
+/* From Uiverse.io by vk-uiux */
+.card {
+  width: 18rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: gray;
+}
+
+.card__skeleton {
+  background-image: linear-gradient(
+    90deg,
+    #ccc 0px,
+    rgb(229 229 229 / 90%) 40px,
+    #ccc 80px
+  );
+  background-size: 300%;
+  background-position: 100% 0;
+  border-radius: inherit;
+  animation: shimmer 1.5s infinite;
+}
+
+.card__title {
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+.card__description {
+  height: 100px;
+  margin-bottom: 3px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
   }
 }
